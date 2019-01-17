@@ -1,1 +1,26 @@
 // Mixins in here
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column() {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.red() {
+    border: 2px solid red;
+}
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
