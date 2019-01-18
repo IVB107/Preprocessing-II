@@ -1,1 +1,47 @@
 // Mixins in here
+
+.border() {
+    border-bottom: 2px dashed @silver;
+}
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+.button(@background, @color) {
+    .border-radius(@radius: 15px);
+    box-shadow: none;
+    background-color: @background;
+    color: @color;
+    font-size: 1.8rem;
+    width: 80%;
+    padding: 10px 0;
+    @media @mobile {
+        width: 100%;
+      }
+}
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column() {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.red() {
+    border: 2px solid red;
+}
+.hover(@color, @bg-color) {
+    color: @color;
+    background-color: @bg-color;
+    transition: .1s ease;
+    border-top: 2px solid @color;
+    border-bottom: 2px solid @color;
+}

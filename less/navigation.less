@@ -1,1 +1,46 @@
 // Navigation Styles here
+
+header {
+    width: 100%;
+    .border;
+  }
+
+.nav-container {
+    .center;
+    justify-content: space-between;
+    max-width: 1000px;
+    padding: 24px 100px;
+    margin: 0 auto;
+    nav {
+        .center;
+        justify-content: space-around;
+        padding-right: 14px;
+        a {
+            font-size: 1.6rem;
+            padding: 2px 15px;
+        }
+        a:hover {
+            .hover(@eastern-blue, @white);
+        }
+        img {
+            width: 100%;
+        }
+    }
+    @media @mobile {
+        .column;
+        width: 100%;
+        padding: 20px 22px 0;
+
+        h1 {
+            @media @mobile {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            }
+        }
+        nav {
+            width: 100%;
+            padding: 0 20px 6px;
+            justify-content: space-between;
+        }
+    }
+}
