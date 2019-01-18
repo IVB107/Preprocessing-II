@@ -38,3 +38,10 @@
 .red() {
     border: 2px solid red;
 }
+.hover(@color, @bg-color) {
+    color: @color;
+    background-color: @bg-color;
+    transition: .1s ease;
+    border-top: 2px solid @color;
+    border-bottom: 2px solid @color;
+}
